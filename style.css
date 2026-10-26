@@ -1,0 +1,94 @@
+/* Палитра: Грязный грязно-желтый, старый размытый пластик, мертвый сухой серо-зеленый */
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrains Mono", "Courier New", monospace;
+    font-size: 13px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(22, 21, 15, 0.92);
+    color: #a39e83;
+    border-bottom: 2px solid #4a4735;
+}
+
+/* Модуль слева: Ошибка / Предупреждение */
+#custom-warning {
+    background-color: #7a6b22;
+    color: #0d0c08;
+    padding: 0 12px;
+    margin-right: 15px;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+/* Часы: Тёмно-светящийся эффект выгоревшего экрана */
+#clock.liminal {
+    background-color: #12110c;
+    color: #7a7558;
+    padding: 0 10px;
+    border: 1px solid #333023;
+    letter-spacing: 4px;
+}
+
+#custom-glitch_text {
+    color: #4a4735;
+    padding-left: 15px;
+    font-style: italic;
+}
+
+/* Воркспейсы: Нарочито сдвинуты и выглядят чужеродно */
+#workspaces {
+    background-color: #1a1913;
+    padding: 0 5px;
+    border: 1px solid #2e2c20;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: #4a4735;
+    background: transparent;
+}
+
+#workspaces button.active {
+    color: #e6dfb8;
+    background-color: #3b3829;
+    text-shadow: 0 0 5px rgba(230, 223, 184, 0.5);
+}
+
+#workspaces button:hover {
+    background: #2e2c20;
+    color: #a39e83;
+}
+
+#custom-null_space {
+    color: #5c1d1d;
+    font-size: 10px;
+    margin-left: 15px;
+    letter-spacing: 3px;
+}
+
+/* Правые модули */
+#custom-hum {
+    color: #615c45;
+    padding: 0 10px;
+}
+
+#cpu.glitched,
+#memory.corrupted,
+#battery.stuck {
+    background-color: #171610;
+    color: #8c8669;
+    padding: 0 10px;
+    margin-left: 6px;
+    border: 1px dashed #3a3727;
+}
+
+#battery.stuck.critical {
+    color: #a83232;
+    background-color: #241010;
+    border-color: #7a2121;
+}

@@ -1,0 +1,68 @@
+[window]
+padding = { x = 12, y = 12 }
+dynamic_padding = true
+decorations = "full"
+opacity = 0.94
+blur = true
+
+[font]
+size = 10.5
+
+[font.normal]
+family = "JetBrains Mono Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "JetBrains Mono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrains Mono Nerd Font"
+style = "Italic"
+
+# --- BACKROOMS COLOR PALETTE ---
+[colors.primary]
+background = '#14130e' # Глубокая тенистая темнота нежилого помещения
+foreground = '#b5ae8f' # Выцветший монохромный текст (обойный беж)
+
+[colors.cursor]
+text   = '#14130e'
+cursor = '#d9cb84' # Мерцающий желтый курсор
+
+[colors.selection]
+text   = '#14130e'
+background = '#474331' # Выделение цвета мокрого ковролина
+
+[colors.normal]
+black   = '#1c1b14'
+red     = '#803434' # Ржавчина / опасная зона
+green   = '#68784d' # Гниловатый зеленый оттенка плесени
+yellow  = '#a89a4d' # Тусклая люминесцентная лампа 60Hz
+blue    = '#4d606e' # Застойная вода (Level 7 / старый пластик)
+magenta = '#6e4d65' # Потемневшая органика
+cyan    = '#4d7875' # Экраны устаревшего оборудования
+white   = '#9e977c'
+
+[colors.bright]
+black   = '#383527'
+red     = '#aa4444' # Сигнальный красный (Entity Alert)
+green   = '#879b65'
+yellow  = '#d4c56e' # Яркий блик мигающего света
+blue    = '#657e91'
+magenta = '#916585'
+cyan    = '#659b97'
+white   = '#cfc7a5' # Максимально доступный "белый" (грязно-кремовый)
+
+[colors.dim]
+black   = '#0d0c08'
+red     = '#4a2121'
+green   = '#3a442b'
+yellow  = '#5e562b'
+blue    = '#2b3740'
+magenta = '#402b3b'
+cyan    = '#2b4442'
+white   = '#5c5848'
+
+[bell]
+animation = "EaseOut"
+duration = 0

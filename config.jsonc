@@ -1,0 +1,91 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 38,
+    "spacing": 0,
+
+    "modules-left": [
+        "custom/warning",
+        "clock#liminal",
+        "custom/glitch_text"
+    ],
+    "modules-center": [
+        "hyprland/workspaces",
+        "custom/null_space"
+    ],
+    "modules-right": [
+        "custom/hum",
+        "cpu#glitched",
+        "memory#corrupted",
+        "battery#stuck"
+    ],
+
+    // --- LEFT MODULES ---
+
+    "custom/warning": {
+        "format": " [ LEVEL 0 ] ",
+        "tooltip": false
+    },
+
+    "clock#liminal": {
+        // Время "застряло" или смотрится противоестественно
+        "format": "░░:░░",
+        "format-alt": "33:71:99",
+        "tooltip-format": "<big>TIME DOES NOT EXIST HERE</big>\n\nNo signal detected."
+    },
+
+    "custom/glitch_text": {
+        "format": "do not look back",
+        "interval": 60
+    },
+
+    // --- CENTER MODULES ---
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}",
+        "persistent-workspaces": {
+            "*": [ "Ø", "Ø", "Ø", "Ø" ]
+        },
+        // Замена стандартных номеров на абстрактные/жутковатые символы
+        "format-icons": {
+            "default": "█"
+        }
+    },
+
+    "custom/null_space": {
+        "format": "::: ENTITY DETECTED :::",
+        "interval": 120
+    },
+
+    // --- RIGHT MODULES ---
+
+    "custom/hum": {
+        "format": "🔊 60Hz HUM",
+        "tooltip": false
+    },
+
+    "cpu#glitched": {
+        "interval": 5,
+        "format": "CPU: ERR%",
+        "format-alt": "CPU: {usage}%",
+        "max-length": 10
+    },
+
+    "memory#corrupted": {
+        "interval": 10,
+        "format": "MEM: [████████--]",
+        "tooltip-format": "Memory leaks into Level 1"
+    },
+
+    "battery#stuck": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "BAT: ∞%",
+        "format-alt": "BAT: {capacity}%",
+        "tooltip": false
+    }
+}
